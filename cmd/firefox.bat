@@ -1,6 +1,6 @@
 @ECHO OFF
 setlocal
-set firefox=%FS_Core_APP%\firefox\firefox.exe
+set firefox=%FS_SYSTEM_APP%\internet\firefox\firefox.exe
 set profile_d=%FS_ROOT%\appdata\firefox\profiles
 set profile_n=xiaoranzzz
 set args=

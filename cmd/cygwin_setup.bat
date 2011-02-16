@@ -1,2 +1,2 @@
 @echo off
-start %FS_CORE_APP%\CYGWIN\setup.exe
+start %FS_CORE%\bin\cygwin_setup.exe

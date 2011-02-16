@@ -49,7 +49,7 @@ call :MY_SET FS_%2 %FS_ROOT%\%1
 call :FS_SET %1 %2 cmd CMD
 call :FS_SET %1 %2 app APP
 call :FS_SET %1 %2 data DATA
-for %%i in (cmd bin sbin) do if exist %FS_ROOT%\%1\%%i\NUL set NEWPATH=%FS_ROOT%\%1\%%~ni;!NEWPATH!
+for %%i in (sbin bin cmd) do if exist %FS_ROOT%\%1\%%i\NUL set NEWPATH=%FS_ROOT%\%1\%%~ni;!NEWPATH!
 if exist %FS_ROOT%\%1\init.bat call %FS_ROOT%\%1\init.bat %*
 for /L %%i in (0,1,25) DO (
     for %%j in (%FS_ROOT%\%1\cmd\auto\%%i*.bat) DO call "%%~j" 

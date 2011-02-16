@@ -1,1 +1,1 @@
-@start %FS_CORE_APP%\notepad++\notepad++.exe %*
+@start %FS_SYSTEM_APP%\editor\notepad++\notepad++.exe %*
