@@ -1,0 +1,1 @@
+../public_profile/bash_profile

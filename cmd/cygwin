@@ -1,0 +1,2 @@
+#!/bin/sh
+exec cmd.exe /C start cygwin.bat&

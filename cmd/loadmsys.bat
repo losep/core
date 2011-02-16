@@ -1,0 +1,1 @@
+d:\programe\msys\msys.bat %~f1

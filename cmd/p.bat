@@ -1,0 +1,3 @@
+@echo off
+echo start %0 search for %*...
+d:\myplace\p\p.exe "%*|p"
