@@ -1,1 +1,1 @@
-start "totalcmd" "%FS_LOCAL_APP%\totalcmd\totalcmd.exe"
+start "totalcmd" "%FS_SYSTEM_APP%\totalcmd\totalcmd.exe"
