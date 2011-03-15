@@ -1,2 +1,2 @@
 @ECHO OFF
-start %FS_CORE_APP%\putty\putty.exe %*
+start %FS_SYSTEM_APP%\internet\putty\putty.exe %*

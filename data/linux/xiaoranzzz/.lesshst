@@ -2,4 +2,5 @@
 .search
 "pager
 "rename
+"mode
 .shell
