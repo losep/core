@@ -4,8 +4,24 @@ param (
 
 foreach($cmd in $commands) {
 	$local:found = $false
-	$dcmd = Get-Command $cmd
+	$dcmd = ""
+	try {
+		$dcmd = Get-Command -TotalCount 1 $cmd
+	}
+	catch {
+		try {
+			$dcmd = Get-Command -TotalCount 1 "$cmd.ps1"
+		}
+		catch {
+			try {
+				$dcmd = Get-Command -TotalCount 1 "$cmd.bat"
+			}
+			catch {
+			}
+		}
+	}
 	if($dcmd) {
+		$dcmd
 		$dcmd.Definition
 		MyPlace-Edit $dcmd.Definition
 		$local:found=$true

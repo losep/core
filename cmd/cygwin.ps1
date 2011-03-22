@@ -1,4 +1,5 @@
 <#
+
  .SYNOPSIS
   	Cygwin launcher
 	
@@ -39,8 +40,7 @@ $Env:USER = $Env:USERNAME
 $Env:HOME = $userhome
 
 "$shell $arguments"
-. $shell $arguments
-
+Start-Process -FilePath $shell -ArgumentList $arguments
 
 <#
 #foreach ($arg in $psboundparameters.keys) {
